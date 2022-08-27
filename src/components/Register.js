@@ -19,11 +19,7 @@ function Register({ handleRegistrationSubmit }) {
 
   return (
     <div className="auth">
-      <form
-        className="auth__form"
-        name="login"
-        onSubmit={handleSubmit}
-      >
+      <form className="auth__form" name="login" onSubmit={handleSubmit}>
         <h2 className="auth__heading">Регистрация</h2>
         <fieldset className="auth__container">
           <input
@@ -52,10 +48,10 @@ function Register({ handleRegistrationSubmit }) {
         </button>
       </form>
       <p className="auth__link">
-      <span>Уже зарегестрированы? </span>
-      <Link to="/sign-in" className="link">
-         Войти
-      </Link>
+        <span>Уже зарегестрированы? </span>
+        <Link to="/sign-in" className="link">
+          Войти
+        </Link>
       </p>
     </div>
   );

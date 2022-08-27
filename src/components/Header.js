@@ -35,7 +35,11 @@ function Header({ email, signOut }) {
             <div className="header__container">
               <p className="header__email">{email}</p>
               <nav>
-                <NavLink to="sign-in" className="header__link  link" onClick={signOut}>
+                <NavLink
+                  to="sign-in"
+                  className="header__link  link"
+                  onClick={signOut}
+                >
                   Выйти
                 </NavLink>
               </nav>
