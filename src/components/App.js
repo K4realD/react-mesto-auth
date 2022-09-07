@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../utils/constants.js";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate, Navigate } from "react-router-dom";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import Footer from "./Footer.js";
@@ -194,6 +194,7 @@ function App() {
               />
             }
           />
+          <Route path="*" element={<Navigate to="/sign-in" />} />
         </Routes>
         <Footer />
         <EditProfilePopup
