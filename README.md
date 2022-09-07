@@ -17,4 +17,7 @@
 6. Popup;
 7. JavaScript;
 8. React-router v.6;
+9. Регистрация и авторизация с помощью JWT token;
+10. Использование Local Storage;
 
+Ссылка на проект: https://k4reald.github.io/react-mesto-auth/
